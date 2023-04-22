@@ -10,13 +10,12 @@ body{
 .headers{
     color: #BFFE98;
     margin: 100px auto;
-    padding: 100px;
 }
 
 #paragraph{
-    padding:100px;
-    margin: 100px auto;
-    font-size: 20px;
+    padding:10px;
+    margin: 10px auto;
+    font-size: 25px;
     font-family: Verdana, Geneva, sans-serif;
 }
 .icons{
