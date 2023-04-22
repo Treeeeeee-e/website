@@ -6,6 +6,9 @@ html{
     height: 200%;
     
 }
+body{    
+    min-height:100%;
+}
 .headers{
     color: #4D9900
 }
