@@ -4,11 +4,11 @@ html{
 body{
     min: height 100%;;
 }
-h1{
+.headers{
     color: #4D9900
 }
 
-.intro{
+#paragraph{
     padding:100px;
     margin: 100px auto;
     font-size: medium;
