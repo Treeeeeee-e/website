@@ -10,7 +10,9 @@ body{
     min-height:100%;
 }
 .headers{
-    color: #4D9900
+    color: #4D9900;
+    margin: 100px auto;
+    padding: 100px;
 }
 
 #paragraph{
