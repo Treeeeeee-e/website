@@ -24,6 +24,9 @@ body{
     width:5em;
     height:5em
 }
+.icons:hover{
+    opacity:0.5
+}
 .extratxt{
     font-size: 20px;
      font-family: Verdana, Geneva, sans-serif;
