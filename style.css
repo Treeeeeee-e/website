@@ -25,10 +25,25 @@ body{
     height:5em
 }
 .icons:hover{
-    opacity:0.5
+    opacity:0.5;
 }
 .extratxt{
     font-size: 20px;
      font-family: Verdana, Geneva, sans-serif;
     margin:10px;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
