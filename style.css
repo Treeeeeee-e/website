@@ -29,12 +29,14 @@ body{
 }
 .extratxt{
     font-size: 20px;
-     font-family: Verdana, Geneva, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     margin:10px;
 }
 .dropdown {
     position: relative;
     display: inline-block;
+    border: 5px solid #BFFE98;
+    border-radius: 8px;
   }
   
   .dropdown-content {
@@ -42,6 +44,7 @@ body{
     position: absolute;
     min-width: 160px;
     z-index: 1;
+    padding: 100px ;
   }
   
   .dropdown:hover .dropdown-content {
