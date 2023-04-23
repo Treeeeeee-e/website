@@ -47,3 +47,6 @@ body{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  h2{
+    text-decoration:overline;
+  }
