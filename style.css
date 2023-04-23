@@ -33,7 +33,7 @@ body{
     margin:10px;
 }
 .dropdown {
-    display: inline;
+    display: inline-block;
     border: 5px solid #BFFE98;
     border-radius: 8px;
   }
