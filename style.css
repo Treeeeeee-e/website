@@ -32,19 +32,19 @@ body{
     font-family: Verdana, Geneva, sans-serif;
     margin:10px;
 }
-.dropdown {
+.popup {
     display: inline-block;
     border: 5px solid #BFFE98;
     border-radius: 8px;
   }
   
-  .dropdown-content {
+  .popup-content {
     display: none;
     position: absolute;
     padding: 100px ;
   }
   
-  .dropdown:hover .dropdown-content {
+  .popup:hover .popup-content {
     display: block;
   }
   h2{
