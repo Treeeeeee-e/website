@@ -61,9 +61,9 @@
         let guessCount=1;
         let resetButton;
         
-        function checkGuess() {}
+        function checkGuess() {
          let userGuess = Number(guessField.value); 
-         if (guessCount === 1){
+        }if (guessCount === 1){
             guesses.textContent = 'Previous guesses: ';     //displays previous guesses
         }   
             guesses.textContent += userGuess + ' ';
@@ -88,7 +88,7 @@
               } else if (userGuess > randomNumber){
               lowOrHi.textContent = 'Last guess was too high!'; //tells if guess was too high
               }
-              
+
               guessCount++; // adds 1 to our guess count
               guessField.value = ''; //gets rid of text in text bot
               guessField.focus(); //selects textbos so user can start typing
