@@ -87,11 +87,11 @@
               lowOrHi.textContent = 'Last guess was too low!'; //tells if guess was too low
               } else if (userGuess > randomNumber){
               lowOrHi.textContent = 'Last guess was too high!'; //tells if guess was too high
-              }
-              
               guessCount++; // adds 1 to our guess count
               guessField.value = ''; //gets rid of text in text bot
               guessField.focus(); //selects textbos so user can start typing
+              guessSubmit.addEventListener('click', checkGuess);
+              }
               
               function setGameOver() {
               guessField.disabled = true; //user cannot type in textbox
@@ -108,6 +108,7 @@
                 for (const resetPara of resetParas) { //iterate through each p tag inside resultParas
                 resetPara.textContent = ''; //setting the text content of <p> to blank
                 }
+                
                 resetButton.parentNode.removeChild(resetButton); // Removes HTML element
                 guessField.disabled = false; //re-enables our guessfield
                 guessSubmit.disabled = false; //re-enabaling submit button
@@ -116,7 +117,7 @@
                 lastResult.style.backgroundColor = 'white';
                 randomNumber = Math.floor(Math.random() * 100) + 1;
               }
-              guessSubmit.addEventListener('click', checkGuess);
+              
 
 
 
