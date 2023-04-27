@@ -64,7 +64,7 @@
         function checkGuess() {}
          let userGuess = Number(guessField.value); 
          if (guessCount === 1){
-            guesses.textContent = 'Previous guesses: '; //displays previous guesses
+            guesses.textContent = 'Previous guesses: ';     //displays previous guesses
         }   
             guesses.textContent += userGuess + ' ';
         
@@ -92,8 +92,7 @@
               guessCount++; // adds 1 to our guess count
               guessField.value = ''; //gets rid of text in text bot
               guessField.focus(); //selects textbos so user can start typing
-              guessSubmit.addEventListener('click', checkGuess);
-
+              
               function setGameOver() {
               guessField.disabled = true; //user cannot type in textbox
               guessSubmit.disabled = true; // cannot click submit button
@@ -117,7 +116,7 @@
                 lastResult.style.backgroundColor = 'white';
                 randomNumber = Math.floor(Math.random() * 100) + 1;
               }
-              
+              guessSubmit.addEventListener('click', checkGuess);
 
 
 
