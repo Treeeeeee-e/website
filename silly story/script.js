@@ -16,7 +16,7 @@ randomize.addEventListener('click', result);
 
 function result() {
 
-    let newStory = storyText;
+    const newStory = storyText;
 
     const xItem = randomValueFromArray(insertX);
     const yItem = randomValueFromArray(insertY);  
@@ -27,7 +27,7 @@ function result() {
     const update3 = newStory.replaceAll (':insertz:', zItem);
 
   if(customName.value !== '') {
-    const name = customName.value;
+    let name = customName.value;
     const updateName = newStory.replaceAll ('Bob', name);
 
   }
