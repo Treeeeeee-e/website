@@ -89,10 +89,11 @@
               } else if (userGuess > randomNumber){
               lowOrHi.textContent = 'Last guess was too high!'; //tells if guess was too high
               }
-            }
+            
               guessCount++; // adds 1 to our guess count
               guessField.value = ''; //gets rid of text in text bot
               guessField.focus(); //selects textbos so user can start typing
+            }
               guessSubmit.addEventListener('click', checkGuess);
               
               
