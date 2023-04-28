@@ -29,7 +29,7 @@ function result() {
     const updateTemp = newStory.replaceAll ('94 farenheit temperature', temperature)
   }
 
-  story.textContent = 
+  story.textContent = newStory
   story.style.visibility = 'visible';
   const newStory = storyText
 
@@ -41,6 +41,6 @@ function result() {
   const update2 = newStory.replaceAll(':insertY:', yItem )
   const update3 = newStory.replaceAll (':insertZ:', zItem)
 
-  story.textContent = newStory  
+
 
 }
