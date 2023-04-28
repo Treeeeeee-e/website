@@ -16,6 +16,16 @@ randomize.addEventListener('click', result);
 
 function result() {
 
+    const newStory = storyText
+
+    const xItem = randomValueFromArray(insertX);
+    const yItem = randomValueFromArray(insertY);  
+    const zItem = randomValueFromArray(insertZ);
+  
+    const update = newStory.replaceAll (':insertX:', xItem) 
+    const update2 = newStory.replaceAll(':insertY:', yItem )
+    const update3 = newStory.replaceAll (':insertZ:', zItem)
+
   if(customName.value !== '') {
     const name = customName.value;
     const updateName = newStory.replaceAll ('Bob', name)
@@ -28,17 +38,6 @@ function result() {
     const updateWeight = newStory.replaceAll ('300 pounds', weight)
     const updateTemp = newStory.replaceAll ('94 farenheit temperature', temperature)
   
-
-
-  const newStory = storyText
-
-  const xItem = randomValueFromArray(insertX);
-  const yItem = randomValueFromArray(insertY);  
-  const zItem = randomValueFromArray(insertZ);
-
-  const update = newStory.replaceAll (':insertX:', xItem) 
-  const update2 = newStory.replaceAll(':insertY:', yItem )
-  const update3 = newStory.replaceAll (':insertZ:', zItem)
 }
   story.textContent = newStory
   story.style.visibility = 'visible';
