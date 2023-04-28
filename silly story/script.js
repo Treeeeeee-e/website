@@ -16,30 +16,30 @@ randomize.addEventListener('click', result);
 
 function result() {
 
-    const newStory = storyText
+    const newStory = storyText;
 
     const xItem = randomValueFromArray(insertX);
     const yItem = randomValueFromArray(insertY);  
     const zItem = randomValueFromArray(insertZ);
   
-    const update = newStory.replaceAll (':insertX:', xItem) 
-    const update2 = newStory.replaceAll(':insertY:', yItem )
-    const update3 = newStory.replaceAll (':insertZ:', zItem)
+    const update = newStory.replaceAll (':insertX:', xItem);
+    const update2 = newStory.replaceAll(':insertY:', yItem );
+    const update3 = newStory.replaceAll (':insertZ:', zItem);
 
   if(customName.value !== '') {
     const name = customName.value;
-    const updateName = newStory.replaceAll ('Bob', name)
+    const updateName = newStory.replaceAll ('Bob', name);
 
   }
 
   if(document.getElementById("uk").checked) {
     const weight = Math.round(300/14)+ 'stone';
-    const temperature =  Math.round((94-32) * 5 / 9)+ 'centrigrade'    
-    const updateWeight = newStory.replaceAll ('300 pounds', weight)
-    const updateTemp = newStory.replaceAll ('94 farenheit temperature', temperature)
+    const temperature =  Math.round((94-32) * 5 / 9)+ 'centrigrade';  
+    const updateWeight = newStory.replaceAll ('300 pounds', weight);
+    const updateTemp = newStory.replaceAll ('94 farenheit temperature', temperature);
   
 }
-  story.textContent = newStory
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 
 }
