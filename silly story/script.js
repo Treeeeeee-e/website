@@ -22,9 +22,9 @@ function result() {
     const yItem = randomValueFromArray(insertY);  
     const zItem = randomValueFromArray(insertZ);
   
-    const update = newStory.replaceAll (':insertX:', xItem);
-    const update2 = newStory.replaceAll(':insertY:', yItem );
-    const update3 = newStory.replaceAll (':insertZ:', zItem);
+    const update = newStory.replaceAll (':insertx:', xItem);
+    const update2 = newStory.replaceAll(':inserty:', yItem );
+    const update3 = newStory.replaceAll (':insertz:', zItem);
 
   if(customName.value !== '') {
     const name = customName.value;
