@@ -27,10 +27,9 @@ function result() {
     const temperature =  Math.round((94-32) * 5 / 9)+ 'centrigrade'    
     const updateWeight = newStory.replaceAll ('300 pounds', weight)
     const updateTemp = newStory.replaceAll ('94 farenheit temperature', temperature)
-  }
+  
 
-  story.textContent = newStory
-  story.style.visibility = 'visible';
+
   const newStory = storyText
 
   const xItem = randomValueFromArray(insertX);
@@ -40,7 +39,8 @@ function result() {
   const update = newStory.replaceAll (':insertX:', xItem) 
   const update2 = newStory.replaceAll(':insertY:', yItem )
   const update3 = newStory.replaceAll (':insertZ:', zItem)
-
-
+}
+  story.textContent = newStory
+  story.style.visibility = 'visible';
 
 }
