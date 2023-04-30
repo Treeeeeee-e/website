@@ -29,7 +29,7 @@ function result() {
 
   if(customName.value !== '') {
     let name = customName.value;
-    newStory = newStory.replaceAll ('Bob', name);
+    updpate = newStory.replaceAll ('Bob', name);
 
   }
 
