@@ -22,20 +22,20 @@ function result() {
     const yItem = randomValueFromArray(insertY);  
     const zItem = randomValueFromArray(insertZ);
   
-    update= newStory.replaceAll (':insertx:', xItem);
-    update2 = newStory.replaceAll(':inserty:', yItem );
-    update3 = newStory.replaceAll (':insertz:', zItem);
+    newStory = newStory.replaceAll (':insertx:', xItem);
+    newStory = newStory.replaceAll(':inserty:', yItem );
+    newStory = newStory.replaceAll (':insertz:', zItem);
         
 
   if(customName.value !== '') {
-    let name = customName.value;
-    updpate = newStory.replaceAll ('Bob', name);
+    var name = customName.value;
+    newStory = newStory.replaceAll ('Bob', name);
 
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300/14)+ 'stone';
-    const temperature =  Math.round((94-32) * 5 / 9)+ 'centrigrade';  
+    var weight = Math.round(300/14)+ 'stone';
+    var temperature =  Math.round((94-32) * 5 / 9)+ 'centrigrade';  
     newStory = newStory.replaceAll ('300 pounds', weight);
     newStory = newStory.replaceAll ('94 farenheit temperature', temperature);
   
