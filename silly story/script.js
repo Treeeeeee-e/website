@@ -37,7 +37,7 @@ function result() {
     var weight = Math.round(300/14)+ 'stone';
     var temperature =  Math.round((94-32) * 5 / 9)+ 'centrigrade';  
     newStory = newStory.replaceAll ('300 pounds', weight);
-    newStory = newStory.replaceAll ('94 farenheit temperature', temperature);
+    newStory = newStory.replaceAll ('94 farenheit', temperature);
   
 }
   story.textContent = newStory;
