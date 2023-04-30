@@ -35,9 +35,9 @@ function result() {
 
   if(document.getElementById("uk").checked) {
     let temperature =  Math.round((94-32) * 5 / 9)+ 'centrigrade';  
-    let weight = Math.round(300/14)+ '' +'stone';
+    let weight = Math.round(300/14) + 'stone';
     newStory = newStory.replaceAll ('300 pounds', weight);
-    newStory = newStory.replaceAll ('94 farenheit', temperature);
+    newStory = newStory.replaceAll ('94', temperature);
   
 }
   story.textContent = newStory;
