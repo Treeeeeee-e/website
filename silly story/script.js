@@ -34,10 +34,10 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    var weight = Math.round(300/14)+ 'stone';
     var temperature =  Math.round((94-32) * 5 / 9)+ 'centrigrade';  
-    newStory = newStory.replaceAll ('94 farenheit', temperature);
+    var weight = Math.round(300/14)+ 'stone';
     newStory = newStory.replaceAll ('300 pounds', weight);
+    newStory = newStory.replaceAll ('94 farenheit', temperature);
   
 }
   story.textContent = newStory;
