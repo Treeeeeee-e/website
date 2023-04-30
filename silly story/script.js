@@ -16,7 +16,7 @@ randomize.addEventListener('click', result);
 
 function result() {
 
-    var newStory = storyText;
+    let newStory = storyText;
 
     const xItem = randomValueFromArray(insertX);
     const yItem = randomValueFromArray(insertY);  
@@ -28,14 +28,14 @@ function result() {
         
 
   if(customName.value !== '') {
-    var name = customName.value;
+    let name = customName.value;
     newStory = newStory.replaceAll ('Bob', name);
 
   }
 
   if(document.getElementById("uk").checked) {
-    var temperature =  Math.round((94-32) * 5 / 9)+ 'centrigrade';  
-    var weight = Math.round(300/14)+ 'stone';
+    let temperature =  Math.round((94-32) * 5 / 9)+ 'centrigrade';  
+    let weight = Math.round(300/14)+ 'stone';
     newStory = newStory.replaceAll ('300 pounds', weight);
     newStory = newStory.replaceAll ('94 farenheit', temperature);
   
