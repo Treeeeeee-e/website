@@ -30,4 +30,4 @@ const data = {
   
   console.log(data)
   console.log('Name:', data.name);
-  console.log (data.age)
+  console.log ('age:',data.age)    
