@@ -18,29 +18,50 @@ app.get('/visits', (req, res) => { //at the '/visits' route
 
 //if user picks rock
 app.get('/rock', (req, res) => {
-
-});
-
-//if user picks paper   
-app.get('/paper', (req, res) => {
     const rndInt = Math.floor(Math.random() * 3) + 1 //generates random number from 0-1 and multiplies it by 3 and adds 1 then floors value (gets rid of decimal)
     console.log(rndInt) //prints out choice of the bot  
     if (rndInt === 3){
         res.send("Bot picked Scissors. You Win!!!");  
     }else if (rndInt === 1){
-        res.send("Bot picked Rock. Tie! Try again!")
+        res.send("Bot picked Rock. Tie! Try again!");
+    }else if (rndInt === 2){
+        res.send("Bot picked Paper. You Lose!");
+    }
+
+});
+
+//if user picks paper   
+app.get('/paper', (req, res) => {
+    const rndInt = Math.floor(Math.random() * 3) + 1 
+    console.log(rndInt) 
+    if (rndInt === 3){
+        res.send("Bot picked Scissors. You Lose!");  
+    }else if (rndInt === 1){
+        res.send("Bot picked Rock. You Win!!!");
+    }else if (rndInt === 2){
+        res.send("Bot picked Paper. Tie! Try again!");
     }
 });
 
 //if user picks scissors
 app.get('/scissors', (req, res) => {
+    const rndInt = Math.floor(Math.random() * 3) + 1 
+    console.log(rndInt) 
+    if (rndInt === 3){
+        res.send("Bot picked Scissors. Tie! Try again!");  
+    }else if (rndInt === 1){
+        res.send("Bot picked Rock. You Lose!");
+    }else if (rndInt === 2){
+        res.send("Bot picked Paper. You Win!!!");
+    }
 
-    });
+    }); 
 
 
 
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`)
+    
 })
 
 
